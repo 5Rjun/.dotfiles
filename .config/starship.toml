@@ -1,0 +1,35 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+# Make prompt a single line instead of two lines
+[line_break]
+disabled = true
+
+format = "$all"
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]                         # The name of the module we are configuring is "character"
+success_symbol = "[❯](bold green)"  # The "success_symbol" is set to "➜" with color "bold green"
+error_symbol = "[✗](bold red)"
+vicmd_symbol = "[V](bold green) "
+
+#continuation_prompt = "▶▶"
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[cmd_duration]
+min_time = 3000
+format = "took [$duration](bold yellow) "
+
+[shell]
+fish_indicator = ""
+bash_indicator= ""
+powershell_indicator = "_"
+unknown_indicator = "mystery shell"
+style = "cyan bold"
+disabled = false
+
+
+
