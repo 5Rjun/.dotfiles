@@ -10,7 +10,7 @@ set wildmenu					" Display all matches when tab complete.
 set incsearch                   " Incremental search
 set hidden                      " Needed to keep multiple buffers open
 set nobackup                    " No auto backups
-set noswapfile                  " No swap
+set noswapfile                  " No swaip
 set t_Co=256                    " Set if term supports 256 colors.
 set number relativenumber       " Display line numbers
 set clipboard=unnamedplus       " Copy/paste between vim and other programs.
@@ -20,7 +20,6 @@ hi clear cursorline
 set scl=yes
 syntax enable
 let g:rehash256 = 1
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -45,35 +44,67 @@ autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
 " => Vim-Plug For Managing Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-call plug#begin('~/.local/share/nvim/plugged')
+call plug#begin('~/AppData/Local/nvim/plugged')
 
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
+    "Plug 'vim-airline/vim-airline'
+    "Plug 'vim-airline/vim-airline-themes'
     Plug 'itchyny/lightline.vim'                       " Lightline statusbar
     Plug 'ryanoasis/vim-devicons'                      " Icons for Nerdtree
-    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'     " Highlighting Nerdtree
-    Plug 'vim-python/python-syntax'                    " Python highlighting
-    Plug 'ap/vim-css-color'                            " Color previews for CSS
     Plug 'ap/vim-css-color'                            " Color previews for CSS
     Plug 'scrooloose/nerdtree'                         " Nerdtree
+    Plug 'nvim-tree/nvim-web-devicons'
     Plug 'junegunn/goyo.vim'                           " Distraction-free viewing
     Plug 'junegunn/limelight.vim'                      " Hyperfocus on a range
     Plug 'junegunn/vim-emoji'                          " Vim needs emojis!
-
+    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'     " Highlighting Nerdtrre  
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Status Line
+" => LightLine
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " The lightline.vim theme
 let g:lightline = {
-      \ 'colorscheme': 'darcula',
-      \ }
+       \ 'colorscheme':'darcula',
+   \ }
+let g:lightline.separator = { 'left':'', 'right':'' }
+let g:lightline.subseparator = { 'left': ' ', 'right': ''  }
 
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"=> Airline
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"let g:airline_powerline_fonts = 1
+"let g:airline_theme='solarized'
+"let g:airline_solarized_bg='dark'
+"let g:airline_left_sep = ''
+"let g:airline_left_alt_sep = ''
+"let g:airline_right_sep = ''
+"let g:airline_right_alt_sep = ''
+"let g:airline_detect_modified=1
+"let g:airline_detect_paste=1
+"let g:airline_detect_crypt=1
+"let g:airline_detect_iminsert=0
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Always show statusline
 set laststatus=2
 
+" Uncomment to prevent non-normal modes showing in powerline and below powerline.
 set noshowmode
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Neovide
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+if exists("g:neovide") 
+    let g:neovide_refresh_rate=60
+    let g:neovide_transparency=0.94
+    let g:neovide_floating_blur_amount_x=3.0
+    let g:neovide_floating_blur_amount_y=3.0
+    set guifont=CaskaydiaCove\ Nerd\ Font\ Mono:h10:#h-normal:#e-subpixelantialias
+endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Theming
@@ -123,7 +154,6 @@ highlight Visual           guifg=#dfdfdf ctermfg=1    guibg=#1c1f24 ctermbg=none
 " highlight CursorColumn     ctermfg=none    ctermbg=236     cterm=none
 " highlight CursorLine       ctermfg=none    ctermbg=236     cterm=none
 " highlight ColorColumn      ctermfg=none    ctermbg=236     cterm=none
-" highlight Cursor           ctermfg=0       ctermbg=5       cterm=none
+" highlight Cursor             ctermfg=none       ctermbg=5       cterm=none
 " highlight htmlEndTag       ctermfg=114     ctermbg=none    cterm=none
 " highlight xmlEndTag        ctermfg=114     ctermbg=none    cterm=none
-
