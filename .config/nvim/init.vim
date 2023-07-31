@@ -69,17 +69,20 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " The lightline.vim theme
 let g:lightline = {
-       \ 'colorscheme':'darcula',
+       \ 'colorscheme':'catppuccin',
    \ }
 let g:lightline.separator = { 'left':'', 'right':'' }
 let g:lightline.subseparator = { 'left': ' ', 'right': ''  }
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"=>Colorscheme
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+colorscheme catppuccin-mocha " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha, embark, nightfox, terafox, duskfox, carbonfox, dayfox, dawnfox,
 
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "=> Airline
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "let g:airline_powerline_fonts = 1
 "let g:airline_theme='solarized'
 "let g:airline_solarized_bg='dark'
