@@ -77,7 +77,7 @@ let g:lightline.subseparator = { 'left': ' ', 'right': ''  }
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "=>Colorscheme
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-colorscheme catppuccin-mocha " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha, embark, nightfox, terafox, duskfox, carbonfox, dayfox, dawnfox,
+colorscheme catppuccin-mocha " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha, embark, nightfox, terafox, duskfox, carbonfox, dayfox, dawnfox, onehalfdrk
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "=> Airline
