@@ -57,8 +57,13 @@ call plug#begin('~/AppData/Local/nvim/plugged')
     Plug 'junegunn/limelight.vim'                      " Hyperfocus on a range
     Plug 'junegunn/vim-emoji'                          " Vim needs emojis!
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'     " Highlighting Nerdtrre  
-call plug#end()
+    Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
+    Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+    Plug 'kyoh86/momiji', { 'rtp': 'vim' }
+    Plug 'rafi/awesome-vim-colorschemes'
+    Plug 'EdenEast/nightfox.nvim'
 
+call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => LightLine
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
