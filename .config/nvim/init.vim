@@ -62,15 +62,14 @@ call plug#begin('~/AppData/Local/nvim/plugged')
     Plug 'kyoh86/momiji', { 'rtp': 'vim' }
     Plug 'rafi/awesome-vim-colorschemes'
     Plug 'EdenEast/nightfox.nvim'
+    Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
 call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => LightLine
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " The lightline.vim theme
-let g:lightline = {
-       \ 'colorscheme':'catppuccin',
-   \ }
+let g:lightline = {'colorscheme':'catppuccin',}
 let g:lightline.separator = { 'left':'', 'right':'' }
 let g:lightline.subseparator = { 'left': ' ', 'right': ''  }
 
@@ -83,8 +82,8 @@ colorscheme catppuccin-mocha " catppuccin-latte, catppuccin-frappe, catppuccin-m
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "=> Airline
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"let g:airline_powerline_fonts = 1
-"let g:airline_theme='solarized'
+let g:airline_powerline_fonts = 1
+let g:airline_theme='catppuccin'
 "let g:airline_solarized_bg='dark'
 "let g:airline_left_sep = ''
 "let g:airline_left_alt_sep = ''
