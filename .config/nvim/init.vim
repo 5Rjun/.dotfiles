@@ -65,16 +65,15 @@ call plug#begin('~/AppData/Local/nvim/plugged')
     Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
 call plug#end()
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"unicodes =    █                       ● ›‹
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => LightLine
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " The lightline.vim theme
-let g:lightline = {'colorscheme':'catppuccin',}
+let g:lightline = {'colorscheme':'catppuccin' }
 let g:lightline.separator = { 'left':'', 'right':'' }
-"let g:lightline.subseparator = { 'left': ' ', 'right': ''  }
 let g:lightline.subseparator = { 'left': '›', 'right': '‹'  }
-
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "=>Colorscheme
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
