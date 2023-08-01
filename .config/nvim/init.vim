@@ -72,7 +72,7 @@ call plug#end()
 let g:lightline = {'colorscheme':'catppuccin',}
 let g:lightline.separator = { 'left':'', 'right':'' }
 "let g:lightline.subseparator = { 'left': ' ', 'right': ''  }
-let g:lightline.subseparator = { 'left': '|', 'right': '|'  }
+let g:lightline.subseparator = { 'left': '›', 'right': '‹'  }
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
