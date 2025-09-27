@@ -12,7 +12,7 @@ disabled = true
 continuation_prompt = "▶▶"
 
 # Assigning symbols in prompt
-[character]                         # The name of the module we are configuring is "character"
-success_symbol = "[❯](bold green)"  # The "success_symbol" is set to "➜" with color "bold green"
+[character]
+success_symbol = "[❯](bold green)"
 error_symbol = "[✗](bold red)"
 vicmd_symbol = "[V](bold green) "
